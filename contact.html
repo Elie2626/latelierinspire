@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — L&#x27;Atelier Inspiré</title>
+<meta name="description" content="Contactez Laetitia : 06 58 76 02 55, laetitia@latelierinspire.fr. Conditions générales de vente.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=12">
+</head>
+<body>
+<a class="skip" href="#main">Passer au contenu principal</a>
+<div class="scrollbar" aria-hidden="true"><span></span></div>
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="L'Atelier Inspiré — accueil">
+      <img src="img/logo.png" alt="" width="36" height="41"><span>L'Atelier Inspiré</span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav__links" id="menu">
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="histoire.html">L'histoire</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="boutique.html" class="btn btn--sm nav__cta">Commander</a>
+    <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <section class="pagehead container">
+    <p class="eyebrow reveal">Contact</p>
+    <h1 class="mega split">Contactez-nous</h1>
+  </section>
+  <section class="contact container">
+    <div class="contact__info">
+      <a class="contact__big reveal" href="tel:0658760255"><span>Téléphone</span>06 58 76 02 55</a>
+      <a class="contact__big reveal" href="mailto:laetitia@latelierinspire.fr"><span>E-mail</span>laetitia@latelierinspire.fr</a>
+      <a class="contact__big reveal" href="https://www.instagram.com/latelierinspire.fr" rel="noopener"><span>Instagram</span>@latelierinspire.fr</a>
+    </div>
+    <form class="form reveal" id="contactForm" novalidate>
+      <p class="form__hint">* Indique les champs obligatoires</p>
+      <div class="field">
+        <label for="f-name">Nom *</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+        <p class="field__err" id="e-name">Ce champ est obligatoire.</p>
+      </div>
+      <div class="field">
+        <label for="f-email">E-mail *</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required>
+        <p class="field__err" id="e-email">L'adresse électronique n'est pas valide (ex. : prenom@exemple.fr).</p>
+      </div>
+      <div class="field">
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg" name="message" rows="5"></textarea>
+      </div>
+      <div class="field field--check">
+        <input id="f-ok" name="consent" type="checkbox" required>
+        <label for="f-ok">J'accepte que ces données soient stockées et traitées dans le but d'établir un contact. Je suis conscient que je peux révoquer mon consentement à tout moment. *</label>
+        <p class="field__err" id="e-ok">Ce champ est obligatoire.</p>
+      </div>
+      <button class="btn" type="submit">Envoyer</button>
+      <p class="form__status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section class="cgv container" id="cgv">
+    <h2 class="h2 split">Conditions générales de vente</h2>
+    <ol class="cgv__list">
+      <li class="reveal"><h3>Présentation de la boutique</h3><p>Boutique en ligne d'articles funéraires créée par une artiste et créative, située au 92 rue Edouard Vaillant, 69100 Villeurbanne.</p></li>
+      <li class="reveal"><h3>Retours et échanges</h3><p>Les retours et échanges ne sont pas acceptés.</p></li>
+      <li class="reveal"><h3>Frais d'envoi</h3><p>Les frais d'envoi sont calculés en fonction du produit.</p></li>
+      <li class="reveal"><h3>Pays d'expédition</h3><p>Les expéditions se font uniquement en France.</p></li>
+      <li class="reveal"><h3>Temps de traitement</h3><p>Le temps de traitement des commandes varie. Pour plus de détails, veuillez consulter les descriptions des articles.</p></li>
+      <li class="reveal"><h3>Frais de douane et d'import</h3><p>Les éventuels frais de douane et d'import sont à la charge de l'acheteur. Les vendeurs ne sont pas responsables des retards causés par la douane.</p></li>
+      <li class="reveal"><h3>Annulations</h3><p>Les annulations sont acceptées dans l'heure suivant l'achat.</p></li>
+      <li class="reveal"><h3>Protection des données</h3><p>Vos données personnelles sont protégées conformément à la législation en vigueur.</p></li>
+    </ol>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <img src="img/logo.png" alt="L'Atelier Inspiré — Honorer dignement ses proches" width="96" height="110" loading="lazy">
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="tel:0658760255">06 58 76 02 55</a></li>
+        <li><a href="mailto:laetitia@latelierinspire.fr">laetitia@latelierinspire.fr</a></li>
+        <li><a href="https://www.instagram.com/latelierinspire.fr" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="histoire.html">L'histoire</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="container footer__copy">© L'Atelier Inspiré — Fabrication française et artisanale, Rhône-Alpes. <a href="contact.html#cgv">Conditions générales de vente</a></p>
+</footer>
+<script src="main.js?v=12" defer></script>
+</body>
+</html>
